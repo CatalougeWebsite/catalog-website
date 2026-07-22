@@ -1,6 +1,6 @@
 {
-  "name": "Lab Equipment Catalog",
-  "short_name": "CECRI Catalog",
+  "name": "cecri catalogue website",
+  "short_name": "catalog",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
