@@ -32,7 +32,7 @@
 
 <div class="nav">
   <div class="logo">
-    <img src="assets/images/logo.jpeg" width="300px" alt="logo" srcset="">
+    <img src="assets/images/logo.jpeg" width="300px" alt="CSIR-CECRI Logo" srcset="">
   </div>
   <div class="hamburger" onclick="toggleMenu(event)">
     <span></span>
@@ -55,20 +55,80 @@
 
 
 <div class="home" id="home">
-  <div class="heading typing_animation">
-    <p class="firstline">Welcome to the Lab Equipment Catalogue – CSIR-CECRI</p>
-    <p class="secondline">Empowering Innovation Through Access and Awareness</p>
+
+
+  <!--
+       Background system
+
+       Layer 1:
+       blurred image filling the entire area
+
+       Layer 2:
+       original image shown without distortion
+
+       Layer 3:
+       elegant overlay
+  -->
+
+  <div class="home-background">
+
+    <div class="home-bg-blur"></div>
+
+    <div class="home-bg-image"></div>
+
+    <div class="home-bg-overlay"></div>
+
   </div>
-  <div class="details text">
-    This internal catalog is designed to provide quick access to essential information about the lab instruments and machinery used within our facility. Whether you're a researcher, student, or technical staff, this platform helps you:
+
+
+
+  <!-- Hero Content -->
+
+  <div class="hero-content">
+
+
+    <div class="heading">
+
+      <p class="firstline">
+        Welcome to the Lab Equipment Catalogue – CSIR-CECRI
+      </p>
+
+      <p class="secondline">
+        Empowering Innovation Through Access and Awareness
+      </p>
+
+    </div>
+
+    <div class="details text">
+
+      This internal catalog is designed to provide quick access
+      to essential information about the lab instruments and
+      machinery used within our facility. Whether you're a
+      researcher, student, or technical staff, this platform
+      helps you:
+
+    </div>
+
+
   </div>
-  <ul class="features">
-    <li>📷 View equipment photos</li>
-    <li>🧾 Understand key specifications</li>
-    <li>📘 Download user manuals</li>
-    <li>🛠️ Report issues or request support</li>
-  </ul>
+
+
+
+  <!-- Scroll Indicator -->
+
+  <div class="scroll-indicator">
+
+    <span>Scroll to explore</span>
+
+    <div class="scroll-arrow">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+
+  </div>
+
+
 </div>
+
 
 
 <div id="catalog" class="catalog">

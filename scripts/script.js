@@ -123,3 +123,29 @@ var observer = new IntersectionObserver(function(entries) {
 document.querySelectorAll('.card').forEach(function(el) {
   observer.observe(el);
 });
+
+window.addEventListener("scroll", () => {
+
+    const home = document.querySelector(".home");
+    const content = document.querySelector(".hero-content");
+    const background = document.querySelector(".home-background");
+
+    if (!home || !content || !background) return;
+
+    const rect = home.getBoundingClientRect();
+
+    const progress = Math.min(
+        Math.max(-rect.top / home.offsetHeight, 0),
+        1
+    );
+
+    background.style.transform =
+        `translateY(${progress * 80}px) scale(${1 + progress * 0.04})`;
+
+    content.style.transform =
+        `translateY(${-progress * 100}px)`;
+
+    content.style.opacity =
+        `${1 - progress * 1.4}`;
+
+});
