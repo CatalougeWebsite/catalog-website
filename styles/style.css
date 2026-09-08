@@ -2838,13 +2838,3 @@ body {
     filter: none !important;
   }
 }
-.home:not(.image-loaded) .hero-content,
-.home:not(.image-loaded) .scroll-indicator {
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* Once image is loaded, your existing animations take over */
-.home.image-loaded .hero-content {
-  animation-delay: 0.8s;
-}
