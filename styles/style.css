@@ -506,7 +506,7 @@ body {
   inset: -35px;
 
   background-image:
-    url("../assets/images/Tapsunbuilding.png");
+    url("../assets/images/Tapsunbuilding.webp");
 
   background-size:
     cover;
@@ -538,7 +538,7 @@ body {
   inset: 0;
 
   background-image:
-    url("../assets/images/Tapsunbuilding.png");
+    url("../assets/images/Tapsunbuilding.webp");
 
   background-size:
     contain;
